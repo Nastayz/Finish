@@ -23,3 +23,21 @@ for (int i = 0; i < arr.Length; i++) {
 		count++;
 	}   
 }
+
+Console.WriteLine();
+Console.Write("Полученный массив: [");
+string[] arrNew = new string[count];
+int j = 0;
+for (int i = 0; i < arr.Length; i++) {
+    if (arr[i].Length <= symbolsLength) {
+        arrNew[j] = arr[i];
+        if (i != arr.Length - 1) {
+            Console.Write(arrNew[j] + ", ");
+        }
+        else {
+            Console.Write(arrNew[j]);
+        }
+        j++;
+    }
+}
+Console.Write("]");
