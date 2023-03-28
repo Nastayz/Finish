@@ -14,3 +14,12 @@ Console.WriteLine();
 Console.Write("Массив: [");
 Console.Write(string.Join(", ", arr));
 Console.Write("]");
+
+int count = 0;
+int symbolsLength = 3;
+
+for (int i = 0; i < arr.Length; i++) {
+	if(arr[i].Length <= symbolsLength) {
+		count++;
+	}   
+}
