@@ -9,3 +9,8 @@
 
 
 string[] arr = {"hello","2","world",":-)"};
+
+Console.WriteLine();
+Console.Write("Массив: [");
+Console.Write(string.Join(", ", arr));
+Console.Write("]");
